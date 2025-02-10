@@ -122,8 +122,24 @@ h2 {
 
 #carousel-imagens img {
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    height: auto;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+    color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #fff;
 }
 
 @media (max-width: 768px) {

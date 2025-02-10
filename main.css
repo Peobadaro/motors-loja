@@ -26,11 +26,16 @@ header {
     z-index: 1;
 }
 
+h1 {
+    color: #3F41A6;
+}
+
 h2 {
     text-align: center;
     margin-bottom: 16px;
-    color: #a0baec;
+    color: #3F41A6;
 }
+
 
 .container {
     max-width: 600px;

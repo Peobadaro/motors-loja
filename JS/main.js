@@ -1,8 +1,14 @@
 $(document).ready(function() {
     $('#carousel-imagens').slick({
         autoplay: true,
-        arrows: false
-    })
+        autoplaySpeed: 2000,
+        arrows: false,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
 })
 
 $('#telefone').mask('(00) 00000-0000', {

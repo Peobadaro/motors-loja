@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
     $('#carousel-imagens').slick({
         autoplay: true,
         autoplaySpeed: 2000,

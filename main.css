@@ -4,18 +4,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Chakra Petch", sans-serif;
 }
 
 body {
-    background-color: #EEF4FF;
-    color: #EEF4FF;
+    background: linear-gradient(180deg, #1e1e1e, #4f4f4f);
+    background-color: #f2f2f2;
+    color: #333;
     align-items: center;
     justify-content: center;
 }
 
 header {
-    background: linear-gradient(90deg, #EEF4FF, #c6d3eb);
+    background: linear-gradient(90deg, #4a4a4a, #2c2c2c);
     color: #f0f0f0;
     text-align: center;
     padding: 20px;
@@ -26,16 +27,11 @@ header {
     z-index: 1;
 }
 
-h1 {
-    color: #1b1c50;
-}
-
 h2 {
     text-align: center;
     margin-bottom: 16px;
-    color: #191a57;
+    color: #332f2f;
 }
-
 
 .container {
     max-width: 600px;
@@ -126,38 +122,8 @@ h2 {
 
 #carousel-imagens img {
     width: 100%;
-    height: auto;
-}
-
-.slick-dots {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-}
-
-.slick-dots li button:before {
-    font-size: 10px;
-    color: #fff;
-}
-
-.slick-dots li.slick-active button:before {
-    color: #fff;
-}
-
-.container-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
-.logo {
-    height: 50px;
-    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -171,13 +137,5 @@ h2 {
 
     header {
         padding: 15px;
-    }
-
-    .logo {
-        height: 40px;
-    }
-    
-    .container-header {
-        gap: 10px;
     }
 }

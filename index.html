@@ -14,24 +14,19 @@
 </head>
 <body>
     <header>
-        <div class="container-header">
-            <img src="images/PB-preto.png" alt="Logo PB" class="logo">
-            <h1>Faça já seu pedido!</h1>
-        </div>
+        <h1>Adquira seu veículo agora mesmo!</h1>
     </header>
-
-
     <div id="carousel-imagens">
-        <img src="images/slide1.png" alt="Carro da Porsche">
-        <img src="images/slide2.png" alt="Carro da BMW">
-        <img src="images/slide3.png" alt="Carro da Ford">
+        <img src="./assets/slide1.png" alt="Carro da Porsche">
+        <img src="./assets/slide2.png" alt="Carro da BMW">
+        <img src="./assets/slide3.png" alt="Carro da Ford">
     </div>
     <div class="container">
         <h2>Insira seus dados para finalização da compra</h2>
         <form id="form" aria-label="Formulário de compra">
             <div class="form-campo">
                 <label for="nome">Nome completo</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu Nome">
+                <input type="text" id="nome" name="nome" placeholder="John Doe">
             </div>
             <div class="form-campo">
                 <label for="email">E-mail</label>
@@ -56,10 +51,12 @@
             <button type="submit">Enviar</button>
         </form>
     </div>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery.mask@1.14.16/dist/jquery.mask.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>

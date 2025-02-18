@@ -88,19 +88,37 @@ h2 {
     z-index: 2;
 }
 
+[useragentpart="placeholder"] {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    color: #999;
+    pointer-events: none;
+    z-index: 1;
+    display: none;
+}
+
 .input-shadow {
     position: absolute;
-    top: 30px; /* Ajuste conforme necessário */
+    top: 35px;
     left: 10px;
     color: #666;
     pointer-events: none;
     z-index: 1;
-    font-family: inherit;
-    font-size: inherit;
+    background-color: transparent;
 }
 
-.form-campo input:focus + .input-shadow {
-    color: #007bff;
+.form-campo input:focus ~ .input-shadow,
+.form-campo input:valid ~ .input-shadow {
+    display: block;
+}
+
+.form-campo input:placeholder-shown ~ [useragentpart="placeholder"] {
+    display: block;
+}
+
+.form-campo input:not(:placeholder-shown) ~ [useragentpart="placeholder"] {
+    display: none;
 }
 
 .error {

@@ -95,7 +95,6 @@ h2 {
     color: #999;
     pointer-events: none;
     z-index: 1;
-    display: none;
 }
 
 .input-shadow {
@@ -105,7 +104,6 @@ h2 {
     color: #666;
     pointer-events: none;
     z-index: 1;
-    background-color: transparent;
 }
 
 .form-campo input:focus ~ .input-shadow,
@@ -123,8 +121,9 @@ h2 {
 
 .error {
     color: red;
-    outline: 2px solid #995a5288;
-    outline-offset: 2px;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
 }
 
 #carousel-imagens img {

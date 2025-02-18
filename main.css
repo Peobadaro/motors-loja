@@ -67,6 +67,7 @@ h2 {
 }
 
 .form-campo {
+    position: relative;
     margin-bottom: 20px;
 }
 
@@ -82,36 +83,24 @@ h2 {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background: #f9f9f9;
-    color: #333;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
 }
 
-.form-campo input:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+.input-shadow {
+    position: absolute;
+    top: 30px; /* Ajuste conforme necessário */
+    left: 10px;
+    color: #666;
+    pointer-events: none;
+    z-index: 1;
+    font-family: inherit;
+    font-size: inherit;
 }
 
-.container button {
-    background: linear-gradient(90deg, #007bff, #0056b3);
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background 0.3s ease-in-out;
-    width: 100%;
-}
-
-.container button:hover {
-    background: linear-gradient(90deg, #0056b3, #004080);
-}
-
-.container button:focus {
-    outline: 2px solid #007bff;
-    outline-offset: 2px;
+.form-campo input:focus + .input-shadow {
+    color: #007bff;
 }
 
 .error {
